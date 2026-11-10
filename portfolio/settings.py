@@ -38,7 +38,7 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    'hammed-kehinde-portfolio.onrender.com',
+    'hammed-kehinde-portfolio-2.onrender.com',
 ]
 
 # Application definition
