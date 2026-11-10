@@ -1,0 +1,214 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hammed Kehinde | Python &amp; Django Backend Developer</title>
+<meta name="description" content="Hammed Kehinde is a Computer Engineering student at FUTMinna and a Python &amp; Django backend developer building web applications, REST APIs and database-driven systems.">
+<meta property="og:title" content="Hammed Kehinde | Python &amp; Django Backend Developer">
+<meta property="og:description" content="Python &amp; Django backend developer. See my Student Management System and get in touch.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<nav class="side" aria-label="Main">
+  <span class="logo">HK.</span>
+  <a href="#home" class="on">Home</a>
+  <a href="#about">About</a>
+  <a href="#work">Work</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+  <!-- Put your CV at: static/cv/Hammed-Kehinde-CV.pdf -->
+  <a class="cv" href="{% static 'cv/Hammed-Kehinde-CV.pdf' %}" download>Download CV</a>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero">
+      <div>
+        <span class="tag">Available for opportunities</span>
+        <h1>Hammed Kehinde.</h1>
+        <p class="role">Python &amp; Django Backend Developer</p>
+        <p class="lead">Building functional web applications, reliable backend systems and practical software solutions.</p>
+        <div class="btns">
+          <a class="btn p" href="#work">View my work</a>
+          <a class="btn" href="#contact">Let’s talk</a>
+          <a class="btn" href="{% static 'cv/Hammed-Kehinde-CV.pdf' %}" download>Download CV</a>
+        </div>
+      </div>
+      <div class="frame">
+        <!-- When you have your photo, save it as static/img/hammed.jpg, delete the <div> below and use:
+             <img src="{% static 'img/hammed.jpg' %}" alt="Hammed Kehinde"> -->
+        <div><b>HK</b><span>Your photograph goes here</span></div>
+        <div class="badge">Django<small>Primary framework</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT + EDUCATION -->
+  <section id="about">
+    <span class="tag">Who I am</span>
+    <h2>Curious mind,<br>reliable code.</h2>
+    <div class="about">
+      <div>
+        <p>I’m Hammed Kehinde, a Computer Engineering student at the Federal University of Technology, Minna, Nigeria, with a strong interest in backend software development.</p>
+        <p>I specialize in Python and Django, building web applications, handling databases and developing REST APIs.</p>
+        <p>My development journey is driven by curiosity, continuous learning and the desire to turn ideas into useful software solutions. I’m particularly interested in building reliable applications that solve real-world problems.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>1</strong><span>Completed project</span></div>
+        <div class="stat"><strong>Django</strong><span>Primary backend framework</span></div>
+        <div class="stat"><strong>Python</strong><span>Main programming language</span></div>
+        <div class="stat"><strong>Backend</strong><span>Current focus</span></div>
+      </div>
+    </div>
+    <div class="edu">
+      <h3>Education</h3>
+      <p><strong>Computer Engineering</strong><br>
+      School of Electrical Engineering and Technology<br>
+      Federal University of Technology, Minna (FUTMinna)<br>
+      2025 – 2031</p>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <span class="tag">Selected work</span>
+    <h2>Things I’ve built</h2>
+
+    <article class="project">
+      <div class="shot">
+        <!-- Add a screenshot at static/img/sms-dashboard.png, delete the <span> and use:
+             <img src="{% static 'img/sms-dashboard.png' %}" alt="Student Management System dashboard"> -->
+        <span>Screenshot coming soon</span>
+      </div>
+      <div class="pinfo">
+        <h3>Student Management System</h3>
+        <span class="live">Live online</span>
+        <p>A web-based application for managing student information and supporting administrative, teacher and student workflows.</p>
+        <ul class="chips"><li>Python</li><li>Django</li><li>PostgreSQL</li><li>REST API</li><li>HTML</li><li>CSS</li></ul>
+        <div class="btns">
+          <a class="btn p" href="https://student-management-k9eu.onrender.com" target="_blank" rel="noopener">View live demo</a>
+          <!-- Replace with the exact repository URL when you have it, e.g. https://github.com/KENTECH-001/your-repo -->
+          <a class="btn" href="https://github.com/KENTECH-001" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <details class="features">
+      <summary>See all features</summary>
+      <ul>
+        <li>Admin, teacher and student dashboards</li>
+        <li>Role-based access control</li>
+        <li>Student registration using student ID</li>
+        <li>Student login using student ID and password</li>
+        <li>Teacher authentication and login</li>
+        <li>Admin account management</li>
+        <li>Password creation, confirmation, recovery and reset</li>
+        <li>Email-based authentication</li>
+        <li>Student record management</li>
+        <li>Student profile management and information updates</li>
+        <li>Student search and filtering</li>
+        <li>Class management</li>
+        <li>Subject management</li>
+        <li>Teacher assignment to classes</li>
+        <li>Student attendance tracking</li>
+        <li>Attendance reports and summaries</li>
+        <li>Student result management</li>
+        <li>Report card generation</li>
+        <li>Fee and payment management</li>
+        <li>Email notifications and notification centre</li>
+        <li>Audit logs</li>
+        <li>Parent/guardian portal</li>
+        <li>Student data export to PDF and Excel</li>
+        <li>Bulk student import using CSV</li>
+        <li>REST API integration</li>
+        <li>PostgreSQL database integration</li>
+        <li>Dashboard navigation, login and logout</li>
+        <li>Deployed and accessible online</li>
+      </ul>
+    </details>
+  </section>
+
+  <!-- SKILLS + SERVICES -->
+  <section id="skills">
+    <span class="tag">Skills &amp; services</span>
+    <h2>Tools I work with</h2>
+    <div class="skills">
+      <div><h3>Backend</h3><ul><li>Python</li><li>Django</li><li>Django REST Framework</li><li>REST APIs</li></ul></div>
+      <div><h3>Database</h3><ul><li>PostgreSQL</li><li>SQLite</li></ul></div>
+      <div><h3>Frontend</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
+      <div><h3>Developer tools</h3><ul><li>Git</li><li>GitHub</li><li>Visual Studio Code</li></ul></div>
+    </div>
+    <div class="services">
+      <div><h3>Backend development</h3><p>Developing server-side applications and backend functionality using Python and Django.</p></div>
+      <div><h3>REST API development</h3><p>Building APIs that allow applications to communicate and exchange data.</p></div>
+      <div><h3>Database integration</h3><p>Connecting web applications to databases and managing application data.</p></div>
+      <div><h3>Web application development</h3><p>Building functional, database-driven web applications.</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <span class="tag">Have a project in mind?</span>
+    <h2>Let’s start a project</h2>
+    <p class="lead">Have an idea, a project or an opportunity? I’d be glad to hear from you.</p>
+
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}<li class="{{ message.tags }}">{{ message }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+
+    <!-- Connect this form to your own view. Field names: name, email, subject, message -->
+    <form class="cform" method="post" action="{% url 'index' %}">
+      {% csrf_token %}
+      <input name="name" type="text" placeholder="Your name" aria-label="Your name" required>
+      <input name="email" type="email" placeholder="Your email" aria-label="Your email" required>
+      <input name="subject" type="text" placeholder="Subject" aria-label="Subject" required>
+      <textarea name="content" placeholder="Tell me about your project" aria-label="Message" rows="5" required></textarea>
+      <button type="submit" class="send">Send message</button>
+    </form>
+
+    <p class="alt">Or write to <a href="mailto:hammedkehinde017@gmail.com">hammedkehinde017@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <span>© {% now "Y" %} Hammed Kehinde · Computer Engineering, FUTMinna</span>
+  <nav aria-label="Social links">
+    <a href="https://github.com/KENTECH-001" target="_blank" rel="noopener">GitHub</a>
+    <a href="mailto:hammedkehinde017@gmail.com">Email</a>
+    <!-- Add these when ready:
+    <a href="YOUR_X_LINK" target="_blank" rel="noopener">X</a>
+    <a href="YOUR_WHATSAPP_LINK" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="YOUR_LINKEDIN_LINK" target="_blank" rel="noopener">LinkedIn</a> -->
+  </nav>
+</footer>
+
+<script>
+(function(){
+  var links = document.querySelectorAll('.side a[href^="#"]');
+  var secs = Array.prototype.map.call(links, function(a){ return document.querySelector(a.getAttribute('href')); });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) {
+        links.forEach(function(l){ l.classList.toggle('on', l.getAttribute('href') === '#' + e.target.id); });
+      }
+    });
+  }, {rootMargin: '-45% 0px -45% 0px'});
+  secs.forEach(function(s){ if (s) io.observe(s); });
+})();
+</script>
+</body>
+</html>

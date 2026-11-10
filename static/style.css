@@ -1,0 +1,122 @@
+/* Hammed Kehinde – portfolio styles
+   Place at: portfolio/static/css/style.css */
+:root{
+   --bg:#070b1a;--panel:#0d1330;--line:#1c2550;--text:#e8ebff;--mute:#8d96c4;--a:#4f7bff;--b:#a56bff;--c:#ff4f9a;--ok:#22e0a0;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)
+}
+html{
+   scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)
+}
+*,*::before,*::after{
+   box-sizing:inherit
+}
+body{
+   margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',system-ui,sans-serif;line-height:1.65;
+background-image:radial-gradient(ellipse at 75% 0,#1a2260 0,transparent 55%),linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:auto,48px 48px,48px 48px
+}
+a{
+   color:inherit;text-decoration:none
+}
+:focus-visible{
+   outline:2px solid var(--a);outline-offset:3px
+}
+h1,h2,h3{font-family:'Barlow Condensed',Impact,sans-serif;text-transform:uppercase;line-height:.95;margin:0}
+
+/* Sidebar */
+.side{position:fixed;inset:0 auto 0 0;width:96px;display:flex;flex-direction:column;align-items:center;gap:6px;padding:28px 0;background:#070b1ae6;border-right:1px solid var(--line);z-index:5}
+.logo{font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:700;color:var(--a);margin-bottom:28px}
+.side a{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);padding:14px 6px;width:100%;text-align:center;border-left:2px solid transparent}
+.side a:hover,.side a.on{color:var(--text);border-color:var(--a);background:linear-gradient(90deg,#4f7bff22,transparent)}
+.side .cv{margin-top:32px;border:1px solid var(--a);border-radius:6px;width:76px;color:var(--a)}
+
+main{margin-left:96px}
+section{min-height:100vh;padding:80px clamp(24px,6vw,96px);display:flex;flex-direction:column;justify-content:center;max-width:1240px}
+.tag{color:var(--ok);font-size:.78rem;display:inline-flex;gap:8px;align-items:center}
+.tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 10px var(--ok)}
+h2{font-size:clamp(2.6rem,6vw,4.6rem);margin:12px 0 28px}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+h1{font-size:clamp(4rem,10vw,8.4rem);background:linear-gradient(180deg,#fff 10%,#9aa8ff 55%,#4f9dff);-webkit-background-clip:text;background-clip:text;color:transparent;margin:18px 0 22px}
+.role{color:var(--a);font-weight:700;font-size:1.05rem;margin:0 0 10px}
+.lead{color:var(--mute);max-width:46ch;margin:0 0 30px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:6px;border:1px solid var(--line);font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;transition:background .2s}
+.btn.p{border-color:var(--a);background:#4f7bff22}
+.btn:hover{background:#4f7bff44}
+.frame{position:relative;aspect-ratio:4/5;max-width:420px;width:100%;border:2px solid var(--a);border-radius:6px;background:linear-gradient(160deg,#1a2260,#2a1456 70%,#5a1a5a);box-shadow:0 0 60px #4f7bff55,0 0 120px #a56bff33;display:grid;place-items:center;text-align:center;justify-self:center;overflow:visible}
+.frame img{width:100%;height:100%;object-fit:cover;border-radius:4px}
+.frame b{font-family:'Barlow Condensed',sans-serif;font-size:7rem;color:#ffffff30;display:block;line-height:1}
+.frame span{font-size:.8rem;color:var(--mute)}
+.badge{position:absolute;right:-18px;bottom:28px;background:#0d1330f0;border:1px solid var(--b);border-radius:6px;padding:10px 18px;font-weight:700}
+.badge small{display:block;color:var(--mute);font-weight:400}
+
+/* About + education */
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:start}
+.about p{color:var(--mute);max-width:62ch;margin:0 0 16px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px}
+.stat strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:2rem;text-transform:uppercase;line-height:1.05}
+.stat span{color:var(--mute);font-size:.85rem}
+.edu{margin-top:44px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--b);border-radius:8px;padding:22px 26px;max-width:760px}
+.edu h3{font-size:1.5rem;color:var(--b);margin-bottom:8px}
+.edu p{margin:0;color:var(--mute)}
+.edu strong{color:var(--text)}
+
+/* Work */
+.project{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;background:var(--panel);border:1px solid var(--a);border-radius:10px;padding:26px;box-shadow:0 0 40px #4f7bff22}
+.shot{aspect-ratio:16/10;border:1px dashed var(--line);border-radius:8px;background:#070b1a;display:grid;place-items:center;color:var(--mute);font-size:.85rem;text-align:center;overflow:hidden}
+.shot img{width:100%;height:100%;object-fit:cover}
+.pinfo{display:flex;flex-direction:column;gap:14px}
+.pinfo h3{font-size:2.2rem}
+.pinfo p{color:var(--mute);margin:0}
+.live{width:fit-content;font-size:.78rem;color:var(--ok);border:1px solid #22e0a055;border-radius:6px;padding:4px 12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0}
+.chips li{list-style:none;font-size:.78rem;border:1px solid var(--line);border-radius:99px;padding:4px 12px;color:var(--mute)}
+.features{margin-top:22px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+.features summary{cursor:pointer;padding:16px 22px;font-weight:700;color:var(--a)}
+.features ul{columns:2;column-gap:36px;margin:0;padding:4px 22px 22px 42px;color:var(--mute);font-size:.9rem}
+.features li{break-inside:avoid;margin-bottom:6px}
+
+/* Skills + services */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.skills h3{font-size:1.5rem;color:var(--a);margin-bottom:12px}
+.skills ul{list-style:none;padding:0;margin:0;display:grid;gap:8px;color:var(--mute)}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:44px}
+.services div{border-top:2px solid var(--b);padding-top:14px}
+.services h3{font-size:1.4rem;margin-bottom:6px}
+.services p{margin:0;color:var(--mute);font-size:.92rem}
+
+/* Contact form */
+.contact{align-items:center;text-align:center}
+.contact h2{font-size:clamp(3rem,8vw,6.5rem)}
+.contact .lead{margin-left:auto;margin-right:auto}
+.cform{width:100%;max-width:640px;display:grid;gap:16px;text-align:left}
+.cform input,.cform textarea{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:18px;color:var(--text);font:inherit;font-size:.95rem}
+.cform textarea{resize:vertical;min-height:140px}
+.cform ::placeholder{color:#6b749f}
+.cform input:focus,.cform textarea:focus{border-color:var(--a);outline:none;box-shadow:0 0 0 3px #4f7bff33}
+.send{background:var(--a);color:#fff;border:0;border-radius:4px;padding:18px;font:inherit;font-weight:700;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.send:hover{background:#6a90ff}
+.messages{list-style:none;padding:0;margin:0 0 4px;font-size:.9rem;text-align:center}
+.messages .success{color:var(--ok)}.messages .error{color:var(--c)}
+.alt{color:var(--mute);font-size:.88rem;margin-top:26px}
+.alt a{color:var(--a)}
+
+/* Footer */
+footer{margin-left:96px;padding:24px clamp(24px,6vw,96px);border-top:1px solid var(--line);color:var(--mute);font-size:.82rem;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+footer nav{display:flex;gap:20px}
+footer nav a:hover{color:var(--a)}
+
+/* Mobile */
+@media(max-width:860px){
+.side{inset:0 0 auto 0;width:auto;flex-direction:row;padding:10px 12px;gap:0;justify-content:space-between;border-right:0;border-bottom:1px solid var(--line);padding-top:calc(10px + env(safe-area-inset-top,0px))}
+.logo{margin:0 8px 0 0;font-size:1.5rem}
+.side a{padding:10px 6px;width:auto;border-left:0;border-bottom:2px solid transparent;font-size:.62rem}
+.side a:hover,.side a.on{border-color:var(--a);background:none}
+.side .cv{display:none}
+main,footer{margin-left:0}
+section{padding-top:96px;min-height:auto}
+.hero,.about,.project{grid-template-columns:1fr;gap:36px}
+.badge{right:8px}
+.features ul{columns:1}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
