@@ -31,7 +31,7 @@ DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
 # DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = [
-    'hammedkehindedev.vercel.app',
+    'hammedkehinde-2jbl06q9l-kenny-s-projects3.vercel.app/',
     '.vercel.app',
 ]
 # Application definition
