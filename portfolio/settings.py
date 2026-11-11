@@ -30,12 +30,12 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
 # DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
-    'https://hammedkehindedev.vercel.app/',
-]
-
+# ALLOWED_HOSTS = [
+#     '127.0.0.1',
+#     'localhost',
+#     'https://hammedkehindedev.vercel.app/',
+# ]
+ALLOWED_HOSTS=['*']
 # Application definition
 
 INSTALLED_APPS = [
