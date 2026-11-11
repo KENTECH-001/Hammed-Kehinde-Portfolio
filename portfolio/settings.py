@@ -31,10 +31,9 @@ DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
 # DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = [
-    'hammedkehindedev.vercel.app/',
+    'hammedkehindedev.vercel.app',
     '.vercel.app',
-]
-# Application definition
+]# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
