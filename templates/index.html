@@ -24,7 +24,6 @@
   <a href="#work">Work</a>
   <a href="#skills">Skills</a>
   <a href="#contact">Contact</a>
-  <!-- Put your CV at: static/cv/Hammed-Kehinde-CV.pdf -->
 </nav>
 
 <main>
@@ -43,8 +42,6 @@
         </div>
       </div>
       <div class="frame">
-        <!-- When you have your photo, save it as static/img/hammed.jpg, delete the <div> below and use:
-             <img src="{% static 'img/hammed.jpg' %}" alt="Hammed Kehinde"> -->
         <div><b>HK</b><span>Your photograph goes here</span></div>
         <div class="badge">Django<small>Primary framework</small></div>
       </div>
@@ -84,8 +81,6 @@
 
     <article class="project">
       <div class="shot">
-        <!-- Add a screenshot at static/img/sms-dashboard.png, delete the <span> and use:
-             <img src="{% static 'img/sms-dashboard.png' %}" alt="Student Management System dashboard"> -->
         <span>Screenshot coming soon</span>
       </div>
       <div class="pinfo">
@@ -95,7 +90,6 @@
         <ul class="chips"><li>Python</li><li>Django</li><li>PostgreSQL</li><li>REST API</li><li>HTML</li><li>CSS</li></ul>
         <div class="btns">
           <a class="btn p" href="https://student-management-k9eu.onrender.com" target="_blank" rel="noopener">View live demo</a>
-          <!-- Replace with the exact repository URL when you have it, e.g. https://github.com/KENTECH-001/your-repo -->
           <a class="btn" href="https://github.com/KENTECH-001" target="_blank" rel="noopener">View on GitHub</a>
         </div>
       </div>
@@ -136,7 +130,6 @@
     </details>
   </section>
 
-  <!-- SKILLS + SERVICES -->
   <section id="skills">
     <span class="tag">Skills &amp; services</span>
     <h2>Tools I work with</h2>
@@ -166,7 +159,6 @@
     </ul>
     {% endif %}
 
-    <!-- Connect this form to your own view. Field names: name, email, subject, message -->
     <form class="cform" method="post" action="{% url 'index' %}">
       {% csrf_token %}
       <input name="name" type="text" placeholder="Your name" aria-label="Your name" required>
@@ -186,10 +178,6 @@
   <nav aria-label="Social links">
     <a href="https://github.com/KENTECH-001" target="_blank" rel="noopener">GitHub</a>
     <a href="mailto:hammedkehinde017@gmail.com">Email</a>
-    <!-- Add these when ready:
-    <a href="YOUR_X_LINK" target="_blank" rel="noopener">X</a>
-    <a href="YOUR_WHATSAPP_LINK" target="_blank" rel="noopener">WhatsApp</a>
-    <a href="YOUR_LINKEDIN_LINK" target="_blank" rel="noopener">LinkedIn</a> -->
   </nav>
 </footer>
 
