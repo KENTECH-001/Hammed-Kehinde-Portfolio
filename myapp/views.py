@@ -60,5 +60,8 @@ def index(request):
     return render(request, 'index.html')
 
 
+def project_detail(request):
+    return render (request, 'project_detail.html')
+
 
 

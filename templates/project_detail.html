@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Student Management System | Hammed Kehinde</title>
+<meta name="description" content="Student Management System: a Django and PostgreSQL web application with admin, teacher and student dashboards, built by Hammed Kehinde.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<div class="detail">
+  <a class="back" href="{% url 'index' %}#projects">&larr; All projects</a>
+
+  <header class="dhead">
+    <div>
+      <span class="cat">Full-stack &middot; Django</span>
+      <h1>Student Management System</h1>
+      <p>A web-based application for managing student information and supporting administrative, teacher and student workflows.</p>
+    </div>
+    <div class="dbtns">
+      <a class="btn w" href="https://student-management-k9eu.onrender.com" target="_blank" rel="noopener">View live &#8599;</a>
+      <a class="btn" href="https://github.com/KENTECH-001" target="_blank" rel="noopener">Source &#8599;</a>
+    </div>
+  </header>
+
+  <div class="dshot"><img src="{% static 'images/sms-dashboard.jpg' %}" alt="Student Management System home page"></div>
+
+  <div class="dcols">
+    <div>
+      <h2>Project overview</h2>
+      <p>The Student Management System is a web-based application for managing student information and supporting administrative, teacher and student workflows. It brings records, attendance, results, fees and reports together in one place, with separate dashboards for each role.</p>
+      <p>It is built with Django and PostgreSQL, includes REST API integration, and is deployed online so it can be used from any browser.</p>
+    </div>
+    <div>
+      <h2>Technologies</h2>
+      <ul class="chips"><li>Python</li><li>Django</li><li>PostgreSQL</li><li>REST API</li><li>HTML</li><li>CSS</li></ul>
+    </div>
+  </div>
+
+  <div class="more">
+    <h3>More project details</h3>
+    <ul>
+        <li>Admin, teacher and student dashboards</li>
+        <li>Role-based access control</li>
+        <li>Student registration using student ID</li>
+        <li>Student login using student ID and password</li>
+        <li>Teacher authentication and login</li>
+        <li>Admin account management</li>
+        <li>Password creation, confirmation, recovery and reset</li>
+        <li>Email-based authentication</li>
+        <li>Student record management</li>
+        <li>Student profile management and information updates</li>
+        <li>Student search and filtering</li>
+        <li>Class management</li>
+        <li>Subject management</li>
+        <li>Teacher assignment to classes</li>
+        <li>Student attendance tracking</li>
+        <li>Attendance reports and summaries</li>
+        <li>Student result management</li>
+        <li>Report card generation</li>
+        <li>Fee and payment management</li>
+        <li>Email notifications and notification centre</li>
+        <li>Audit logs</li>
+        <li>Parent/guardian portal</li>
+        <li>Student data export to PDF and Excel</li>
+        <li>Bulk student import using CSV</li>
+        <li>REST API integration</li>
+        <li>PostgreSQL database integration</li>
+        <li>Dashboard navigation, login and logout</li>
+        <li>Deployed and accessible online</li>
+    </ul>
+  </div>
+</div>
+<footer class="dfoot"><span>&copy; {% now "Y" %} Hammed Kehinde &middot; Computer Engineering, FUTMinna</span></footer>
+</body>
+</html>

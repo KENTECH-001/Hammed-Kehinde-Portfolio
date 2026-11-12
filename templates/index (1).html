@@ -21,7 +21,7 @@
   <span class="logo">HK.</span>
   <a href="#home" class="on">Home</a>
   <a href="#about">About</a>
-  <a href="#work">Work</a>
+  <a href="#projects">Projects</a>
   <a href="#skills">Skills</a>
   <a href="#contact">Contact</a>
 </nav>
@@ -37,21 +37,19 @@
         <p class="role">Python &amp; Django Backend Developer</p>
         <p class="lead">Building functional web applications, reliable backend systems and practical software solutions.</p>
         <div class="btns">
-          <a class="btn p" href="#work">View my work</a>
+          <a class="btn p" href="#projects">View my projects</a>
           <a class="btn" href="#contact">Let’s talk</a>
         </div>
       </div>
       <div class="frame">
-        <div><b>HK</b><span>Your photograph goes here</span></div>
-        <div class="badge">Django<small>Primary framework</small></div>
+        <img src="{% static 'images/hammed.jpg' %}" alt="Hammed Kehinde">
       </div>
     </div>
   </section>
 
-  <!-- ABOUT + EDUCATION -->
   <section id="about">
     <span class="tag">Who I am</span>
-    <h2>Curious mind,<br>reliable code.</h2>
+    <h2>Backend developer building<br>reliable web applications.</h2>
     <div class="about">
       <div>
         <p>I’m Hammed Kehinde, a Computer Engineering student at the Federal University of Technology, Minna, Nigeria, with a strong interest in backend software development.</p>
@@ -65,69 +63,50 @@
         <div class="stat"><strong>Backend</strong><span>Current focus</span></div>
       </div>
     </div>
-    <div class="edu">
-      <h3>Education</h3>
-      <p><strong>Computer Engineering</strong><br>
-      School of Electrical Engineering and Technology<br>
-      Federal University of Technology, Minna (FUTMinna)<br>
-      2025 – 2031</p>
+  </section>
+
+  <section id="build">
+    <div class="build">
+      <div>
+        <h2>What I<br>build</h2>
+        <p class="lead">Capabilities shaped by my Student Management System project, from role-based dashboards to records, reports and APIs.</p>
+      </div>
+      <div class="bgrid">
+        <div class="bcard"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z</svg><h3>Role-Based Dashboards</h3><p>Separate admin, teacher and student views with role-based access control.</p></div>
+        <div class="bcard"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM2.5 20c0-3.6 3-6 6.5-6s6.5 2.4 6.5 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5c2 .6 3.5 2.4 3.5 5.5</svg><h3>Student Records</h3><p>Registration, profiles, search and filtering, and bulk CSV import.</p></div>
+        <div class="bcard"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">M9 4h6v3H9zM7 5H5v16h14V5h-2M9 14l2 2 4-4</svg><h3>Attendance & Results</h3><p>Attendance tracking, result management and report card generation.</p></div>
+        <div class="bcard"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">M2.5 7a2 2 0 0 1 2-2h15a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-15a2 2 0 0 1-2-2zM2.5 10h19</svg><h3>Fees & Payments</h3><p>Fee and payment management with email notifications.</p></div>
+        <div class="bcard"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">M8 7l-5 5 5 5M16 7l5 5-5 5</svg><h3>REST APIs</h3><p>API integration so applications can exchange data.</p></div>
+        <div class="bcard"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">M6 3h8l4 4v14H6zM14 3v4h4M12 11v6M9 14l3 3 3-3</svg><h3>Reports & Exports</h3><p>Attendance reports and data export to PDF and Excel.</p></div>
+      </div>
+    </div>
+    <div class="demo">
+      <span class="kicker">What my project demonstrates</span>
+      <h3>From idea to working features</h3>
+      <p>My Student Management System brings together authentication, role-based dashboards, records, attendance, results, fees and reports on a PostgreSQL database. It shows how I turn a real need into a working, deployed backend application.</p>
     </div>
   </section>
 
-  <!-- WORK -->
-  <section id="work">
-    <span class="tag">Selected work</span>
-    <h2>Things I’ve built</h2>
+  <section id="projects">
+    <span class="tag">Selected projects</span>
+    <h2>Projects</h2>
 
     <article class="project">
       <div class="shot">
-        <span>Screenshot coming soon</span>
+        <img src="{% static 'images/sms-dashboard.jpg' %}" alt="Student Management System home page">
       </div>
+      <div class="pmeta"><span>01 / Full-stack</span><b>Live online</b></div>
       <div class="pinfo">
         <h3>Student Management System</h3>
-        <span class="live">Live online</span>
         <p>A web-based application for managing student information and supporting administrative, teacher and student workflows.</p>
         <ul class="chips"><li>Python</li><li>Django</li><li>PostgreSQL</li><li>REST API</li><li>HTML</li><li>CSS</li></ul>
-        <div class="btns">
-          <a class="btn p" href="https://student-management-k9eu.onrender.com" target="_blank" rel="noopener">View live demo</a>
-          <a class="btn" href="https://github.com/KENTECH-001" target="_blank" rel="noopener">View on GitHub</a>
+        <div class="plinks">
+          <a class="btn w" href="{% url 'project_detail' %}">More about this project</a>
+          <a class="tl" href="https://student-management-k9eu.onrender.com" target="_blank" rel="noopener">Live demo &#8599;</a>
+          <a class="tl" href="https://github.com/KENTECH-001" target="_blank" rel="noopener">GitHub &#8599;</a>
         </div>
       </div>
     </article>
-
-    <details class="features">
-      <summary>See all features</summary>
-      <ul>
-        <li>Admin, teacher and student dashboards</li>
-        <li>Role-based access control</li>
-        <li>Student registration using student ID</li>
-        <li>Student login using student ID and password</li>
-        <li>Teacher authentication and login</li>
-        <li>Admin account management</li>
-        <li>Password creation, confirmation, recovery and reset</li>
-        <li>Email-based authentication</li>
-        <li>Student record management</li>
-        <li>Student profile management and information updates</li>
-        <li>Student search and filtering</li>
-        <li>Class management</li>
-        <li>Subject management</li>
-        <li>Teacher assignment to classes</li>
-        <li>Student attendance tracking</li>
-        <li>Attendance reports and summaries</li>
-        <li>Student result management</li>
-        <li>Report card generation</li>
-        <li>Fee and payment management</li>
-        <li>Email notifications and notification centre</li>
-        <li>Audit logs</li>
-        <li>Parent/guardian portal</li>
-        <li>Student data export to PDF and Excel</li>
-        <li>Bulk student import using CSV</li>
-        <li>REST API integration</li>
-        <li>PostgreSQL database integration</li>
-        <li>Dashboard navigation, login and logout</li>
-        <li>Deployed and accessible online</li>
-      </ul>
-    </details>
   </section>
 
   <section id="skills">
@@ -136,7 +115,6 @@
     <div class="skills">
       <div><h3>Backend</h3><ul><li>Python</li><li>Django</li><li>Django REST Framework</li><li>REST APIs</li></ul></div>
       <div><h3>Database</h3><ul><li>PostgreSQL</li><li>SQLite</li></ul></div>
-      <div><h3>Frontend</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
       <div><h3>Developer tools</h3><ul><li>Git</li><li>GitHub</li><li>Visual Studio Code</li></ul></div>
     </div>
     <div class="services">
@@ -147,7 +125,6 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact" class="contact">
     <span class="tag">Have a project in mind?</span>
     <h2>Let’s start a project</h2>
@@ -169,6 +146,14 @@
     </form>
 
     <p class="alt">Or write to <a href="mailto:hammedkehinde017@gmail.com">hammedkehinde017@gmail.com</a></p>
+
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/kehinde-hammed-a73b3644a" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/KENTECH-001" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://x.com/HammedKehi21877" target="_blank" rel="noopener">X</a>
+      <a href="https://www.instagram.com/hammedkehinde55" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/2349158666089" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
   </section>
 
 </main>
@@ -176,7 +161,11 @@
 <footer>
   <span>© {% now "Y" %} Hammed Kehinde · Computer Engineering, FUTMinna</span>
   <nav aria-label="Social links">
+    <a href="https://www.linkedin.com/in/kehinde-hammed-a73b3644a" target="_blank" rel="noopener">LinkedIn</a>
     <a href="https://github.com/KENTECH-001" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://x.com/HammedKehi21877" target="_blank" rel="noopener">X</a>
+    <a href="https://www.instagram.com/hammedkehinde55" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://wa.me/2349158666089" target="_blank" rel="noopener">WhatsApp</a>
     <a href="mailto:hammedkehinde017@gmail.com">Email</a>
   </nav>
 </footer>
